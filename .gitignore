@@ -1,0 +1,12 @@
+# UV build and metadata
+uv.lock
+.uv_build/
+.uv_metadata/
+pipeline_project_wjake.egg-info/
+
+# pytest cache and test outputs
+.DS_Store
+__pycache__/
+.pytest_cache/
+.cache
+out/

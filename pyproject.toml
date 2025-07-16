@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipeline-project-wjake"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.2.3",
+    "openimageio>=3.0.5.0",
+    "pyside6>=6.9.0",
+    "pytest>=8.3.4",
+]
+
+[project.scripts]
+mask_layer_tool = "mask_layer_tool.main:main"
+
+[tool.setuptools]
+packages = ["textures", "mask_layer_tool"]
